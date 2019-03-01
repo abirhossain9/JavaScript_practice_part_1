@@ -1,0 +1,1 @@
+# JavaScript_practice_part_1
