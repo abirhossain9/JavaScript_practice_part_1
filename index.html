@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="script.js">
+		<title>JavaScript</title>
+	</head>
+	<body>
+		<p id="nsu">Nsu</p>
+		<button type="button" onclick="myFunction()">Click</button>
+		<script >
+			function myFunction()
+			{
+				document.getElementById('nsu').innerHTML="North South University";
+			}
+		</script>
+		<p>(5+6)*10=<span id="algebra"></span></p>
+		<button type="button" onclick="algebra()">Click to calculate</button>
+		<script >
+			function algebra()
+			{
+				document.getElementById('algebra').innerHTML=(5+6)*10;
+			}
+		</script>
+		<button type="button" onclick="multiplication()">multiply x*10</button>
+		<script >
+			var x;
+			x=5;
+				function multiplication()
+				{
+					document.getElementById('multi').innerHTML=x*10;
+				}
+		</script>
+		<p id="multi">x*10</p>
+		<button type="button" onclick="concate()">clik to concate abir and hossain</button>
+		<script >
+				function concate()
+				{
+					document.getElementById('con').innerHTML="Abir"+" "+"Hossain"
+				}
+		</script>
+		<p id="con"></p>
+		<button type="button" onclick="add()">clik to add 40 and 50</button>
+		<script >
+			var a=40;
+			var b=50;
+			var total=a+b;
+				function add()
+				{
+					document.getElementById('add').innerHTML="the total is: "+total;
+				}
+		</script>
+		<p id="add"></p>
+		<p>javascript object</p>
+		<script >
+			var person={
+			f_name:"Abir",
+			age:20
+		};
+						function obb()
+						{
+							document.getElementById('obb').innerHTML=person.f_name+" is "+person.age+" years old";
+						}
+		</script>
+		<p id="obb" onclick="obb()">click</p>
+		<p>Length of University:</p>
+		<p id="length"></p>
+		<script>
+		var txt = "University";
+		document.getElementById("length").innerHTML = txt.length;
+		</script>
+		<p> Array practice</p>
+		<p id="arr"></p>
+		<script>
+		var arr =
+		["Premio",
+		"BMW",
+		"Audi"
+		];
+		document.getElementById('arr').innerHTML = arr;
+		</script>
+		<p> click to turn on or off the bulb</p>
+		<img src="images/OFFbulb.jpg" id="image">
+		<button onclick="off()">Off</button>
+		<button onclick="onn()">On</button>
+		<script>
+		function off()
+		{
+		document.getElementById('image').src='images/OFFbulb.jpg'
+	}
+		function onn()
+		{
+		document.getElementById('image').src='images/ONbulb.jpg'
+	}
+		</script>
+	</body>
+</html>
